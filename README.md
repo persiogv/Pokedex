@@ -15,10 +15,10 @@ Also, this project take the advantage of Swift Package Manager.
 
 This project relies on the following Swift packages, all from my authorship:
 
-https://github.com/persiogv/PokeClient
-https://github.com/persiogv/CoreNetworking
-https://github.com/persiogv/CoreSwiftUI
-https://github.com/persiogv/Core
+- https://github.com/persiogv/PokeClient
+- https://github.com/persiogv/CoreNetworking
+- https://github.com/persiogv/CoreSwiftUI
+- https://github.com/persiogv/Core
 
 ## Favorites
 
