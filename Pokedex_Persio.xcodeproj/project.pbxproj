@@ -45,6 +45,7 @@
 		5EC15378244D76BD008116BF /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15377244D76BD008116BF /* ErrorViewModel.swift */; };
 		5ED11EAB244ED4C60056F2A6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED11EAA244ED4C60056F2A6 /* CustomButton.swift */; };
 		5EF49F25244F534200E2B5D7 /* CoreSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EF49F24244F534200E2B5D7 /* CoreSwiftUI */; };
+		5EF49F55244F72C900E2B5D7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5EF49F54244F72C900E2B5D7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,7 @@
 		5E83C19F244E243000906D50 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		5E83C1AC244E3F0E00906D50 /* SpriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteView.swift; sourceTree = "<group>"; };
 		5E83C1AE244E404000906D50 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		5EC15321244CEFC5008116BF /* Pokedex_Persio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex_Persio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC15321244CEFC5008116BF /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC15324244CEFC5008116BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC15326244CEFC5008116BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5EC15328244CEFC6008116BF /* PokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexView.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		5EC15375244D768A008116BF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		5EC15377244D76BD008116BF /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
 		5ED11EAA244ED4C60056F2A6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5EF49F54244F72C900E2B5D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +215,7 @@
 		5EC15322244CEFC5008116BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EC15321244CEFC5008116BF /* Pokedex_Persio.app */,
+				5EC15321244CEFC5008116BF /* Pokedex.app */,
 				5EC15337244CEFC7008116BF /* Pokedex_PersioTests.xctest */,
 				5EC15342244CEFC7008116BF /* Pokedex_PersioUITests.xctest */,
 			);
@@ -223,6 +225,7 @@
 		5EC15323244CEFC5008116BF /* Pokedex_Persio */ = {
 			isa = PBXGroup;
 			children = (
+				5EF49F54244F72C900E2B5D7 /* README.md */,
 				5E83C1AB244E3EB300906D50 /* Delegates */,
 				5E596A57244D8EDA003E5E57 /* Extensions */,
 				5E596A4E244D8A0F003E5E57 /* View models */,
@@ -285,7 +288,7 @@
 				5EF49F24244F534200E2B5D7 /* CoreSwiftUI */,
 			);
 			productName = Pokedex_Persio;
-			productReference = 5EC15321244CEFC5008116BF /* Pokedex_Persio.app */;
+			productReference = 5EC15321244CEFC5008116BF /* Pokedex.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5EC15336244CEFC7008116BF /* Pokedex_PersioTests */ = {
@@ -380,6 +383,7 @@
 				5EC15331244CEFC7008116BF /* LaunchScreen.storyboard in Resources */,
 				5E596A54244D8B2C003E5E57 /* Localizable.strings in Resources */,
 				5E83C196244E06E500906D50 /* pokemon_details.json in Resources */,
+				5EF49F55244F72C900E2B5D7 /* README.md in Resources */,
 				5E83C195244E06E500906D50 /* pokemon_list.json in Resources */,
 				5EC1532E244CEFC7008116BF /* Preview Assets.xcassets in Resources */,
 				5EC1532B244CEFC7008116BF /* Assets.xcassets in Resources */,
@@ -607,8 +611,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.persiogv.Pokedex-Persio";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.persiogv.Pokedex;
+				PRODUCT_NAME = Pokedex;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -627,8 +631,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.persiogv.Pokedex-Persio";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.persiogv.Pokedex;
+				PRODUCT_NAME = Pokedex;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
