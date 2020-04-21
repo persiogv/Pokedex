@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Pokedex_Persio
+
+  Created by Pérsio on 20/04/20.
+  Copyright © 2020 Persio Vieira. All rights reserved.
+*/
+
+// MARK: - Pokédex
+"pokedex.title" = "Pokédex";
+
+// MARK: - Favorites
+"favorites.title" = "Favorites";
+
+// MARK: - Details
+"details.sprites.name" = "front";
+"details.identity.name" = "name";
+"details.formats.slot" = "slot %i";
+"details.formats.stats" = "effort %i | base %i";
+"details.formats.games" = "index %i";
+"details.formats.number" = "#%i";
+"details.formats.height" = "%i m";
+"details.formats.weight" = "%i kg";
+"details.number.name" = "number";
+"details.height.name" = "height";
+"details.weight.name" = "weight";
+"details.general.unavailable" = "[unavailable]";
+
+// MARK: - Footer
+"footer.message.default" = "%i pokemons loaded";
+"footer.message.error" = "an error has ocurred";
+"footer.button.default" = "load more";
+"footer.button.error" = "try again";
+
+// MARK: - Error
+"error.message" = "Oops! An error has ocurred.\nCheck your internet connection and try again ;)";
+"error.button" = "try again";

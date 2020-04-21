@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Core",
+        "repositoryURL": "https://github.com/persiogv/Core.git",
+        "state": {
+          "branch": "master",
+          "revision": "3719208e2bb7c143847a02e62e0db7129f1eb75f",
+          "version": null
+        }
+      },
+      {
+        "package": "CoreNetworking",
+        "repositoryURL": "https://github.com/persiogv/CoreNetworking",
+        "state": {
+          "branch": null,
+          "revision": "4db69140c10dcb01b659c08e722fbc7328e0bd91",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "CoreSwiftUI",
+        "repositoryURL": "https://github.com/persiogv/CoreSwiftUI",
+        "state": {
+          "branch": "master",
+          "revision": "aa84b24b68c91d1b7ae1f9fa012d8acb5c795797",
+          "version": null
+        }
+      },
+      {
+        "package": "PokeClient",
+        "repositoryURL": "https://github.com/persiogv/PokeClient.git",
+        "state": {
+          "branch": "master",
+          "revision": "610c2e3778d74f04d1c7bf7a31fa0b71c5894388",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
