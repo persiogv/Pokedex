@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabView = TabView {
             PokedexView(viewModel: PokedexViewModel())
                 .tabItem {
-                    Image(systemName: "phone.fill")
+                    Image(systemName: "circle.fill")
                     Text(Localizable.Pokedex.title)
             }
 
