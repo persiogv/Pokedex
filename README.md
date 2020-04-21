@@ -4,7 +4,7 @@ A very simple example of PokeAPI app.
 
 ## Pre-requisites
 
-To build and run the project you must have Xcode 11.4 or newer (and swift-tools-version 5.1 at least).
+To build and run the project you must have Xcode 11.4.1 or newer (and swift-tools-version 5.1 at least).
 
 ## Approach
 
@@ -22,7 +22,7 @@ This project relies on the following Swift packages, all from my authorship:
 
 ## Favorites
 
-As PokeAPI doesn't have an endpoint to favorite pokemons, this feature in the app is just a fake function, caching the favorites only in the memory.
+As PokeAPI doesn't have endpoints to handle favorited pokemons, this is just a fake feature, caching the favorites only in the memory.
 
 ## License
 
