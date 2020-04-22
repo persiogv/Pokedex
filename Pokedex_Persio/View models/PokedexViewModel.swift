@@ -15,7 +15,7 @@ class PokedexViewModel: ListViewModel, ObservableObject {
     
     private struct Constants {
         static let initialPage = 0
-        static let defaultLimit = 20
+        static let defaultLimit = 50
         static let pageIncrement = 1
     }
     
