@@ -1,6 +1,6 @@
 # Pokedex
 
-A very simple example of PokeAPI client application.
+A very simple example of PokéAPI client application.
 
 ## Pre-requisites
 
