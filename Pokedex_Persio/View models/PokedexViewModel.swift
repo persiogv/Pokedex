@@ -84,7 +84,7 @@ class PokedexViewModel: ListViewModel, ObservableObject {
         self.pokemons.append(contentsOf: pokemons.map { PokemonViewModel(pokemon: $0, favorited: provider.checkForFavorite($0)) })
         
         if isLastPage {
-            return footerViewModel.updateToState(.completed(String(format: Localizable.Footer.Message.default, pokemons.count)))
+            return footerViewModel.updateToState(.completed(String(format: Localizable.Footer.Message.default, self.pokemons.count)))
         }
         
         let action = (title: Localizable.Footer.Button.default, action: fetchPokemons)
