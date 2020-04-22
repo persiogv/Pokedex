@@ -11,6 +11,12 @@ import PokeClient
 
 struct PokedexView: View {
     
+    // MARK: Identifiers
+    
+    private enum Identifiers: String {
+        case pokedex_list
+    }
+    
     // MARK: Properties
     
     @ObservedObject private var viewModel: PokedexViewModel
@@ -41,6 +47,7 @@ struct PokedexView: View {
                     }
                 }
                 .navigationBarTitle(viewModel.title)
+                .accessibility(identifier: Identifiers.pokedex_list.rawValue)
             }
         }.onAppear {
             self.viewModel.fetchPokemons()
