@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreSwiftUI
 
 struct FooterView: View {
     
@@ -39,7 +40,7 @@ struct FooterView: View {
                 .padding()
                 .foregroundColor(.fromAsset(.tint))
                 .frame(maxWidth: .infinity)
-                .font(.system(size: 16, weight: .bold, design: .default))
+                .font(.system(size: .margin, weight: .bold, design: .default))
             }
             
             if viewModel.isLoading {

@@ -13,6 +13,15 @@
 "favorites.title" = "Favorites";
 
 // MARK: - Details
+"details.sections.sprites" = "sprites";
+"details.sections.identity" = "identity";
+"details.sections.measures" = "measures";
+"details.sections.types" = "types";
+"details.sections.stats" = "stats";
+"details.sections.games" = "games";
+"details.sections.abilities" = "abilities";
+"details.button.add" = "add to favorites";
+"details.button.remove" = "remove from favorites";
 "details.sprites.name" = "front";
 "details.identity.name" = "name";
 "details.formats.slot" = "slot %i";

@@ -11,6 +11,12 @@ import CoreSwiftUI
 
 struct SpriteView: View {
     
+    // MARK: Constants
+    
+    private struct Constants {
+        static let imageSize: CGFloat = 80
+    }
+    
     // MARK: Properties
     
     @Environment(\.imageCache) var cache: ImageCache
@@ -33,11 +39,11 @@ struct SpriteView: View {
             HStack {
                 Text(viewModel.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.system(size: 14, weight: .bold, design: .default))
+                    .font(.system(size: .fontSize, weight: .bold, design: .default))
                 Spacer()
                 
                 AsyncImage(url: viewModel.value, cache: cache, placeholder: ActivityIndicator(isAnimating: $isLoading, style: .medium), configuration: { $0.resizable() })
-                .frame(width: 80, height: 80)
+                    .frame(width: Constants.imageSize, height: Constants.imageSize)
             }
             
             Divider()

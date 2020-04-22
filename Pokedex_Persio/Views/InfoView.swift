@@ -29,14 +29,14 @@ struct InfoView: View {
             HStack {
                 Text(viewModel.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.system(size: 14, weight: .bold, design: .default))
-                    .padding([.top, .bottom, .trailing], 16)
+                    .font(.system(size: .fontSize, weight: .bold, design: .default))
+                    .padding([.top, .bottom, .trailing], .margin)
                 Spacer()
                 Text(viewModel.value)
                     .frame(maxWidth: .infinity, alignment: .trailing)
-                    .font(.system(size: 14, weight: .bold, design: .default))
+                    .font(.system(size: .fontSize, weight: .bold, design: .default))
                     .foregroundColor(.fromAsset(.tint))
-                    .padding([.top, .bottom, .leading], 16)
+                    .padding([.top, .bottom, .leading], .margin)
             }
             Divider()
         }

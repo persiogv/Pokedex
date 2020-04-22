@@ -30,8 +30,8 @@ struct PokemonView: View {
             HStack {
                 Text(viewModel.pokemonName)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.some(.system(size: 16, weight: .bold, design: .default)))
-                    .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 16))
+                    .font(.some(.system(size: .margin, weight: .bold, design: .default)))
+                    .padding(EdgeInsets(top: .margin, leading: .zero, bottom: .margin, trailing: .margin))
                 
                 if viewModel.favorited {
                     Image.fromAsset(.star)

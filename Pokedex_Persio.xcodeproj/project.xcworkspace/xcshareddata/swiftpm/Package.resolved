@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/persiogv/Core.git",
         "state": {
           "branch": "master",
-          "revision": "3719208e2bb7c143847a02e62e0db7129f1eb75f",
+          "revision": "30a1ab8ad4a031e427f63a5efad55a5fcaae8879",
           "version": null
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/persiogv/CoreSwiftUI",
         "state": {
           "branch": "master",
-          "revision": "aa84b24b68c91d1b7ae1f9fa012d8acb5c795797",
+          "revision": "83de3e19889890eeeb24320e30b768cf4cba42c1",
           "version": null
         }
       },
@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/persiogv/PokeClient.git",
         "state": {
           "branch": "master",
-          "revision": "610c2e3778d74f04d1c7bf7a31fa0b71c5894388",
+          "revision": "39d2d0bb32a462ec8303e89aa74690c41fa1e955",
           "version": null
         }
       }

@@ -28,7 +28,7 @@ struct DetailsView: View {
     var body: some View {
         List {
             if !viewModel.sprites.isEmpty {
-                Section(header: HeaderView(title: "sprites")) {
+                Section(header: HeaderView(title: Localizable.Details.Sections.sprites)) {
                     ForEach(viewModel.sprites, id: \.id) { viewModel in
                         SpriteView(viewModel: viewModel)
                     }
@@ -36,31 +36,31 @@ struct DetailsView: View {
             }
             
             if !viewModel.identity.isEmpty {
-                section(withTitle: "identity", items: viewModel.identity)
+                section(withTitle: Localizable.Details.Sections.sprites, items: viewModel.identity)
             }
 
             if !viewModel.measures.isEmpty {
-                section(withTitle: "measures", items: viewModel.measures)
+                section(withTitle: Localizable.Details.Sections.measures, items: viewModel.measures)
             }
             
             if !viewModel.types.isEmpty {
-                section(withTitle: "types", items: viewModel.types)
+                section(withTitle: Localizable.Details.Sections.types, items: viewModel.types)
             }
             
             if !viewModel.stats.isEmpty {
-                section(withTitle: "stats", items: viewModel.stats)
+                section(withTitle: Localizable.Details.Sections.stats, items: viewModel.stats)
             }
             
             if !viewModel.games.isEmpty {
-                section(withTitle: "games", items: viewModel.games)
+                section(withTitle: Localizable.Details.Sections.games, items: viewModel.games)
             }
 
             if !viewModel.abilities.isEmpty {
-                section(withTitle: "abilities", items: viewModel.abilities)
+                section(withTitle: Localizable.Details.Sections.abilities, items: viewModel.abilities)
             }
             
             Section(footer: FooterView(viewModel: viewModel.footerViewModel)) {
-                CustomButton(title: viewModel.isFavorited ? "remove from favorites" : "add to favorites") {
+                CustomButton(title: viewModel.isFavorited ? Localizable.Details.Button.remove : Localizable.Details.Button.add) {
                     self.viewModel.isFavorited ? self.viewModel.removeFromFavorites() : self.viewModel.addToFavorites()
                 }
             }

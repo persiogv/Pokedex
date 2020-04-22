@@ -26,7 +26,6 @@
 		5E83C19E244E1F4700906D50 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83C19D244E1F4700906D50 /* UIColor.swift */; };
 		5E83C1A0244E243000906D50 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83C19F244E243000906D50 /* HeaderView.swift */; };
 		5E83C1AD244E3F0E00906D50 /* SpriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83C1AC244E3F0E00906D50 /* SpriteView.swift */; };
-		5E83C1AF244E404000906D50 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E83C1AE244E404000906D50 /* ActivityIndicator.swift */; };
 		5EC15325244CEFC5008116BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15324244CEFC5008116BF /* AppDelegate.swift */; };
 		5EC15327244CEFC5008116BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15326244CEFC5008116BF /* SceneDelegate.swift */; };
 		5EC15329244CEFC6008116BF /* PokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15328244CEFC6008116BF /* PokedexView.swift */; };
@@ -46,6 +45,7 @@
 		5ED11EAB244ED4C60056F2A6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED11EAA244ED4C60056F2A6 /* CustomButton.swift */; };
 		5EF49F25244F534200E2B5D7 /* CoreSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5EF49F24244F534200E2B5D7 /* CoreSwiftUI */; };
 		5EF49F55244F72C900E2B5D7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5EF49F54244F72C900E2B5D7 /* README.md */; };
+		5EF49F57244FB9F300E2B5D7 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF49F56244FB9F300E2B5D7 /* CGFloat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,6 @@
 		5E83C19D244E1F4700906D50 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5E83C19F244E243000906D50 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		5E83C1AC244E3F0E00906D50 /* SpriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteView.swift; sourceTree = "<group>"; };
-		5E83C1AE244E404000906D50 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		5EC15321244CEFC5008116BF /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC15324244CEFC5008116BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC15326244CEFC5008116BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +107,7 @@
 		5EC15377244D76BD008116BF /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
 		5ED11EAA244ED4C60056F2A6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		5EF49F54244F72C900E2B5D7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5EF49F56244FB9F300E2B5D7 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,6 @@
 				5E83C1AC244E3F0E00906D50 /* SpriteView.swift */,
 				5E83C199244E191200906D50 /* InfoView.swift */,
 				5E83C19F244E243000906D50 /* HeaderView.swift */,
-				5E83C1AE244E404000906D50 /* ActivityIndicator.swift */,
 				5ED11EAA244ED4C60056F2A6 /* CustomButton.swift */,
 			);
 			path = Views;
@@ -189,6 +188,7 @@
 				5E596A5A244D90ED003E5E57 /* Image.swift */,
 				5E83C19B244E1CFC00906D50 /* Color.swift */,
 				5E83C19D244E1F4700906D50 /* UIColor.swift */,
+				5EF49F56244FB9F300E2B5D7 /* CGFloat.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -426,7 +426,7 @@
 				5E83C198244E0FFB00906D50 /* InfoViewModel.swift in Sources */,
 				5ED11EAB244ED4C60056F2A6 /* CustomButton.swift in Sources */,
 				5EC15329244CEFC6008116BF /* PokedexView.swift in Sources */,
-				5E83C1AF244E404000906D50 /* ActivityIndicator.swift in Sources */,
+				5EF49F57244FB9F300E2B5D7 /* CGFloat.swift in Sources */,
 				5E596A5B244D90ED003E5E57 /* Image.swift in Sources */,
 				5E83C1AD244E3F0E00906D50 /* SpriteView.swift in Sources */,
 				5E83C19C244E1CFC00906D50 /* Color.swift in Sources */,

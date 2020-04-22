@@ -10,13 +10,18 @@ import SwiftUI
 
 struct CustomButton: View {
     
+    // MARK: Constants
+    
+    private enum Constants {
+        static let fontSize: CGFloat = 16
+    }
+    
     // MARK: Properties
     
     private let title: String
     private let action: () -> Void
     
     // MARK: Initializers
-    
     
     /// Initializer
     /// - Parameters:
@@ -34,7 +39,7 @@ struct CustomButton: View {
             .padding()
             .foregroundColor(.fromAsset(.tint))
             .frame(maxWidth: .infinity)
-            .font(.system(size: 16, weight: .bold, design: .default))
+            .font(.system(size: Constants.fontSize, weight: .bold, design: .default))
     }
 }
 

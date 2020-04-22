@@ -10,6 +10,13 @@ import SwiftUI
 
 struct HeaderView: View {
     
+    // MARK: Constants
+    
+    private enum Constants {
+        static let fontSize: CGFloat = 16
+        static let marginTop: CGFloat = 24
+    }
+    
     // MARK: Properties
     
     let title: String
@@ -29,12 +36,12 @@ struct HeaderView: View {
             Text(title)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundColor(.fromAsset(.tint))
-                .font(.system(size: 16, weight: .light, design: .default))
+                .font(.system(size: Constants.fontSize, weight: .light, design: .default))
             
             Divider()
         }
-        .padding(EdgeInsets(top: 24, leading: 16, bottom: 16, trailing: 16))
-        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+        .padding(EdgeInsets(top: Constants.marginTop, leading: .margin, bottom: .margin, trailing: .margin))
+        .listRowInsets(EdgeInsets(top: .zero, leading: .zero, bottom: .zero, trailing: .zero))
         .background(Color.fromAsset(.background))
     }
 }

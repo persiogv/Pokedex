@@ -19,6 +19,21 @@ struct Localizable {
     }
     
     struct Details {
+        struct Sections {
+            static let sprites = "details.sections.sprites".localized
+            static let identity = "details.sections.identity".localized
+            static let measures = "details.sections.measures".localized
+            static let types = "details.sections.types".localized
+            static let stats = "details.sections.stats".localized
+            static let games = "details.sections.games".localized
+            static let abilities = "details.sections.abilities".localized
+        }
+        
+        struct Button {
+            static let add = "details.button.add".localized
+            static let remove = "details.button.remove".localized
+        }
+        
         struct Sprites {
             static let name = "details.sprites.name".localized
         }
