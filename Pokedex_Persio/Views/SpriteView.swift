@@ -40,6 +40,7 @@ struct SpriteView: View {
                 Text(viewModel.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.system(size: .fontSize, weight: .bold, design: .default))
+                
                 Spacer()
                 
                 AsyncImage(url: viewModel.value, cache: cache, placeholder: ActivityIndicator(isAnimating: $isLoading, style: .medium), configuration: { $0.resizable() })

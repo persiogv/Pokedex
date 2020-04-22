@@ -56,25 +56,25 @@ class DetailsViewModel: ObservableObject {
     
     /// Returns the pokemon abilities
     var abilities: [InfoViewModel] {
-        return pokemonDetails?.abilities?.map { InfoViewModel(name: $0.ability?.name ?? Localizable.Details.General.unavailable, value: String(format: Localizable.Details.Formats.slot, $0.slot ?? 0)) } ?? []
+        return pokemonDetails?.abilities?.map { InfoViewModel(name: $0.ability?.name ?? Localizable.Details.General.unavailable, value: String(format: Localizable.Details.Formats.slot, $0.slot ?? .zero)) } ?? []
     }
     
     /// Return the pokemon types
     var types: [InfoViewModel] {
-        return pokemonDetails?.types?.map { InfoViewModel(name: $0.type?.name ?? Localizable.Details.General.unavailable, value: String(format: Localizable.Details.Formats.slot, $0.slot ?? 0)) } ?? []
+        return pokemonDetails?.types?.map { InfoViewModel(name: $0.type?.name ?? Localizable.Details.General.unavailable, value: String(format: Localizable.Details.Formats.slot, $0.slot ?? .zero)) } ?? []
     }
     
     /// Returns the pokemom stats
     var stats: [InfoViewModel] {
         return pokemonDetails?.stats?.map {
-            let value = String(format: Localizable.Details.Formats.stats, $0.effort ?? 0, $0.baseStat ?? 0)
-            return InfoViewModel(name: $0.stat?.name ?? "", value: value)
+            let value = String(format: Localizable.Details.Formats.stats, $0.effort ?? .zero, $0.baseStat ?? .zero)
+            return InfoViewModel(name: $0.stat?.name ?? String(), value: value)
         } ?? []
     }
     
     /// Return the pokemon games
     var games: [InfoViewModel] {
-        return pokemonDetails?.gameIndices?.map { InfoViewModel(name: $0.version?.name ?? Localizable.Details.General.unavailable, value: String(format: Localizable.Details.Formats.games, $0.gameIndex ?? 0)) } ?? []
+        return pokemonDetails?.gameIndices?.map { InfoViewModel(name: $0.version?.name ?? Localizable.Details.General.unavailable, value: String(format: Localizable.Details.Formats.games, $0.gameIndex ?? .zero)) } ?? []
     }
     
     // MARK: Private properties
