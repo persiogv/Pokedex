@@ -8,7 +8,7 @@ To build and run the project you must have Xcode 11.4.1 or newer (and swift-tool
 
 ## Approach
 
-I have decided to take the opportunity to start enjoing SwiftUI and Combine frameworks (MVVM design). Contributions are welcome!
+I have decided to take the opportunity to start enjoying SwiftUI and Combine frameworks (MVVM design). Contributions are welcome!
 Also, this project take the advantage of Swift Package Manager.
 
 ## Packages
