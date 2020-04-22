@@ -10,14 +10,17 @@ import Foundation
 
 struct Localizable {
     
+    // MARK: Pokedex
     struct Pokedex {
         static let title = "pokedex.title".localized
     }
     
+    // MARK: Favorites
     struct Favorites {
         static let title = "favorites.title".localized
     }
     
+    // MARK: Details
     struct Details {
         struct Sections {
             static let sprites = "details.sections.sprites".localized
@@ -67,7 +70,8 @@ struct Localizable {
             static let name = "details.weight.name".localized
         }
     }
-        
+    
+    // MARK: Footer
     struct Footer {
         struct Message {
             static let `default` = "footer.message.default".localized
@@ -80,6 +84,7 @@ struct Localizable {
         }
     }
     
+    // MARK: Error
     struct Error {
         static let message = "error.message".localized
         static let button = "error.button".localized
