@@ -25,6 +25,8 @@ This project relies on the following Swift Packages, all from my authorship:
 
 As PokeAPI doesn't have endpoints to handle favorited pokemons, this is just a fake feature, caching the favorites only in the memory.
 
+You can track posts here: https://webhook.site/d295e018-137c-4c58-a019-fdd4cd344466.
+
 ## License
 
 The MIT License (MIT)
