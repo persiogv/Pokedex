@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/persiogv/CoreNetworking",
         "state": {
           "branch": null,
-          "revision": "4db69140c10dcb01b659c08e722fbc7328e0bd91",
-          "version": "1.0.1"
+          "revision": "a315a85240dede215d73c5c947f4470ef9540e79",
+          "version": "1.0.2"
         }
       },
       {
@@ -42,7 +42,7 @@
         "repositoryURL": "https://github.com/persiogv/PokeClient.git",
         "state": {
           "branch": "master",
-          "revision": "39c5acba1885fb06add8e050ed4550688f8538c2",
+          "revision": "8aff8ac0cd7154f784dbe104bb1afd8dd23bac91",
           "version": null
         }
       },
