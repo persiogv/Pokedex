@@ -36,7 +36,7 @@ struct DetailsView: View {
             }
             
             if !viewModel.identity.isEmpty {
-                section(withTitle: Localizable.Details.Sections.sprites, items: viewModel.identity)
+                section(withTitle: Localizable.Details.Sections.identity, items: viewModel.identity)
             }
 
             if !viewModel.measures.isEmpty {
