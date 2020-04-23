@@ -1,5 +1,5 @@
 //
-//  PokedexErrorFeature.swift
+//  PokedexFailureFeature.swift
 //  Pokedex_PersioUITests
 //
 //  Created by Pérsio on 21/04/20.
@@ -9,10 +9,10 @@
 import XCTest
 import CoreUITests
 
-class PokedexErrorFeature: Feature {
+class PokedexFailureFeature: Feature {
     
     private let dynamicStubs = DynamicStubs(initialStubs: [
-        HTTPStubInfo(url: "/pokemon", jsonFilename: "pokemon_list_error", method: .GET)
+        HTTPStubInfo(url: "/pokemon", jsonFilename: "error", method: .GET)
     ])
     
     private lazy var pokedexScreen = PokedexScreen(feature: self)
@@ -28,9 +28,13 @@ class PokedexErrorFeature: Feature {
     }
 
     func testPokedex() {
-        dynamicStubs.setupStub(url: "/pokemon", filename: "pokemon_list_error")
+        given("I am at Pokedex screen") {
+            dynamicStubs.setupStub(url: "/pokemon", filename: "error")
+        }
         
-        XCTAssertTrue(pokedexScreen.errorText.isVisible)
-        XCTAssertTrue(pokedexScreen.errorButton.isVisible)
+        then("I should see its elements properly") {
+            XCTAssertTrue(pokedexScreen.errorText.isVisible)
+            XCTAssertTrue(pokedexScreen.errorButton.isVisible)
+        }
     }
 }

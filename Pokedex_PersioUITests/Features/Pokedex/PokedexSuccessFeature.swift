@@ -28,9 +28,13 @@ class PokedexSuccessFeature: Feature {
     }
 
     func testPokedex() {
-        dynamicStubs.setupStub(url: "/pokemon", filename: "pokemon_list")
+        given("I am at Pokedex screen") {
+            dynamicStubs.setupStub(url: "/pokemon", filename: "pokemon_list")
+        }
         
-        XCTAssertTrue(pokedexScreen.navigationTitle.isVisible)
-        XCTAssertTrue(pokedexScreen.list.isVisible)
+        then("I should see its elements properly") {
+            XCTAssertTrue(pokedexScreen.navigationTitle.isVisible)
+            XCTAssertTrue(pokedexScreen.list.isVisible)
+        }
     }
 }

@@ -20,10 +20,14 @@ class PokedexScreen: Screen {
     }
 
     var navigationTitle: Element {
-        return waitForElement(withLabel: "Pokédex", query: Queries.staticTexts)
+        return waitForElement(withIdentifier: "Pokédex", query: Queries.navigationBars)
     }
     
     var list: Element {
         return waitForElement(withIdentifier: "pokedex_list", query: Queries.otherElements)
+    }
+    
+    func selectPokemon(_ name: String) {
+        waitForElement(withLabel: name, query: Queries.buttons).tap()
     }
 }
