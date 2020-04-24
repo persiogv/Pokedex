@@ -42,9 +42,3 @@ struct CustomButton: View {
             .font(.system(size: Constants.fontSize, weight: .bold, design: .default))
     }
 }
-
-struct CustomButton_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomButton(title: "load more", action: {})
-    }
-}

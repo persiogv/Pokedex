@@ -54,10 +54,3 @@ struct PokedexView: View {
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
-
-struct PokedexView_Previews: PreviewProvider {
-    static var previews: some View {
-        let viewModel = PokedexViewModel(provider: PokemonListProviderMock(), pageLimit: 3)
-        return PokedexView(viewModel: viewModel)
-    }
-}

@@ -43,12 +43,3 @@ struct PokemonView: View {
         }
     }
 }
-
-struct PokemonView_Previews: PreviewProvider {
-    static var previews: some View {
-        let pokemon = Pokemon(name: "pikachu", url: "")
-        let viewModel = PokemonViewModel(pokemon: pokemon, favorited: true)
-        
-        return PokemonView(viewModel: viewModel)
-    }
-}

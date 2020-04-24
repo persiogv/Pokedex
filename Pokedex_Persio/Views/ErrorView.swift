@@ -46,13 +46,3 @@ struct ErrorView: View {
         }
     }
 }
-
-struct ErrorView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        let action = (title: "try again", action: {})
-        let viewModel = ErrorViewModel(message: "Ooops! An error has ocurred :(", buttonAction: action)
-        
-        return ErrorView(viewModel: viewModel)
-    }
-}

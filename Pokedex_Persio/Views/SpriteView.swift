@@ -51,10 +51,3 @@ struct SpriteView: View {
         }
     }
 }
-
-struct SpriteView_Previews: PreviewProvider {
-    static var previews: some View {
-        let viewModel = InfoViewModel(name: "front_default", value: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png")
-        return SpriteView(viewModel: viewModel)
-    }
-}

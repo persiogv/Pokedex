@@ -80,12 +80,3 @@ struct DetailsView: View {
         }
     }
 }
-
-struct DetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        let pokemonViewModel = PokemonViewModel(pokemon: Pokemon(name: "bulbasaur", url: ""), favorited: false)
-        let viewModel = DetailsViewModel(provider: PokemonDetailsProviderMock(), pokemonViewModel: pokemonViewModel, listViewModel: nil)
-        
-        return DetailsView(viewModel: viewModel)
-    }
-}

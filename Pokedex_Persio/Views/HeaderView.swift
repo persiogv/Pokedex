@@ -45,9 +45,3 @@ struct HeaderView: View {
         .background(Color.fromAsset(.background))
     }
 }
-
-struct HeaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        HeaderView(title: "sprites")
-    }
-}

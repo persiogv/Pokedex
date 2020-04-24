@@ -51,13 +51,3 @@ struct FooterView: View {
         .frame(maxWidth: .infinity)
     }
 }
-
-struct FooterView_Previews: PreviewProvider {
-    static var previews: some View {
-        let action = FooterViewModel.FooterAction(title: "load more", action: {})
-        
-        let viewModel = FooterViewModel()
-        viewModel.updateToState(.success((message: "20 pokemons loaded", action: action)))
-        return FooterView(viewModel: viewModel)
-    }
-}

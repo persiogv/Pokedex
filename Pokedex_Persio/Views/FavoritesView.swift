@@ -41,10 +41,3 @@ struct FavoritesView: View {
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
-
-struct FavoritesView_Previews: PreviewProvider {
-    static var previews: some View {
-        let viewModel = FavoritesViewModel(provider: PokemonListProviderMock())
-        return FavoritesView(viewModel: viewModel)
-    }
-}

@@ -42,10 +42,3 @@ struct InfoView: View {
         }
     }
 }
-
-struct InfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        let viewModel = InfoViewModel(name: "name", value: "bulbasaur")
-        return InfoView(viewModel: viewModel)
-    }
-}
